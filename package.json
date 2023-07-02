@@ -1,0 +1,24 @@
+{
+  "name": "demo_server_movies",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/index.js",
+  "author": "",
+  "license": "ISC",
+  "scripts": {
+    "start": "npx nodemon src/index.js",
+    "test": "npx jest -i test/api/routes --forceExit",
+    "test-extensions": "npx jest -i test/api/extensions  --forceExit"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.3",
+    "express": "4.17.1",
+    "morgan": "1.10.0",
+    "pg": "8.6.0",
+    "pg-promise": "^11.4.1"
+  },
+  "devDependencies": {
+    "nodemon": "2.0.21"
+  }
+}
