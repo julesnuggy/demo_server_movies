@@ -1,7 +1,7 @@
 const db = require('../db/client');
 
 const getAllMovies = async () => {
-  const result = await db.query('SELECT * FROM movies');
+  const result = await db.query('SELECT * FROM movies ORDER BY id');
   return result.rows;
 };
 
